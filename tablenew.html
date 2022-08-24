@@ -1,21 +1,34 @@
 <html>
     <head>
         <style>
+           
+
+            table {
+                background-color: aquamarine;
+            }
             th,td{
                 border: 1px solid black;
+                padding: 20px;
             }
             table {
                 border-collapse: collapse;
             }
+            table{
+                border-style:double;
+            }
             tr:hover{
                 background-color:blue;
             }
+           col
+
+                
         </style>
 
     </head>
     <body>
         <table>
-            <h1>Table</h1>
+            
+            <h1 style=color:brown>Table</h1>
             <tr>
                 <th>S.no</th>
                 <th>Name</th>
@@ -39,7 +52,13 @@
             </tr>
         </table>
         <table>
-            <h2>Table</h2>
+            <colgroup>
+                <col span="1" >
+                <col span="2" style="background-color:crimson">
+
+                
+                </colgroup>
+            <h2 style=color:brown>Table</h2>
             <tr>
                 <th>S.no</th>
                 <th colspan="2">Name</th>
@@ -48,43 +67,61 @@
             </tr>
             <tr>
                 <td>01</td>
-                <td>maryum</td>
-                <td> ayesh</td>
+                <td>Maryum</td>
+                <td> Farooq</td>
                 <td>abc@gmail.com</td>
             </tr>
             <tr>
                 <td>02</td>
-                <td>saima</td>
-                <td> kiran</td>
+                <td>Saima</td>
+                <td> Arif</td>
                 <td>gfc@gmail.com</td>
             </tr>
             <tr>
                 <td>03</td>
-                <td>mezab</td>
-                <td> hania</td>
+                <td>Mezab</td>
+                <td> Sajid</td>
                 <td>mfc@gmail.com</td>
             </tr>
         </table>
         <table>
-            <h3>Table</h3>
+            <h3 style=color:brown>Table</h3>
             <tr>
                 <th>Name</th>
                 <td>Ali</td>
             </tr>
             <tr>
                 <th rowspan="2" >phone.no</th>
-                <td >0987</td>
+                <td >0987-567</td>
                
               
                 
             </tr>
             <tr>
          
-                <td >0987</td>
+                <td >0987-457</td>
                
               
                 
             </tr>
+        </table>
+        <table>
+            <h4 style=color:brown>Table</h4>
+            <tr>
+                <th>Name</th>
+                <th>phone.no</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Umer khan</td>
+                <td>678-4567</td>
+                
+
+            </tr>
+           <tr>
+            
+            <td>565-4567</td>
+           </tr>
+
         </table>
     </body>
 </html>
