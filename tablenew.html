@@ -5,28 +5,31 @@
 
             table {
                 background-color: aquamarine;
+                border-collapse: collapse;
+                border-style:double;
             }
             th,td{
                 border: 1px solid black;
                 padding: 20px;
+                border-style: 20px ;
+              
+                text-align: center;
             }
-            table {
-                border-collapse: collapse;
-            }
-            table{
-                border-style:double;
-            }
+
             tr:hover{
                 background-color:blue;
             }
-           col
-
-                
+            tr:nth-child(even)
+            {
+                background-color: aqua;
+            }
+            
+               
         </style>
 
     </head>
     <body>
-        <table>
+        <table style="width:50%;">
             
             <h1 style=color:brown>Table</h1>
             <tr>
@@ -125,8 +128,9 @@
         </table>
         <h3 style=color:brown>Unorder list</h3>
         <ul>
-            <li>ABC</li>
-            <li>NMK</li>
+            <li>Cats</li>
+            <li>Dogs</li>
+            <li>camel</li>
             </ul>
             <h3 style=color:brown> Order list</h3>
             <ol>
@@ -135,8 +139,10 @@
                 </ol>
                 <h3 style=color:brown>Description List</h3>
                 <dl>
-                    <dt style=color:deeppink><b>Coffee</b></dt>
-                    <dd>Black hot copy</dd>
+                    <dt style=color:deeppink><b>Chapter 1</b></dt>
+                    <dd>Chapter 1 a</dd>
+                    <dd>Chapter 1 b</dd>
+                    <dd>Chapter 1 c</dd>
                     <dt style=color:deeppink><b>Drink</b></dt>
                     <dd>Cold drink</dd>
                     </dl>
