@@ -6,7 +6,7 @@
             color: antiquewhite;
             border: 2px  solid black;
             padding: 20px;
-            margin: 20px;
+          
             width: 50%;
 
             }
@@ -15,9 +15,26 @@
             color: antiquewhite;
             border: 2px  solid black;
             padding: 20px;
-            margin: 20px;
+          
             width: 50%;
             
+
+            }
+            .p{
+                background-color:chocolate;
+                border: 2px dotted brown;
+
+            }
+            .h{
+                background-color:darkgreen;
+                border: 2px dotted purple;
+                margin: 20px;
+                
+            }
+            .css{
+                background-color:darkgreen;
+                border: 2px dotted purple;
+                border-radius: 20px;
 
             }
         </style>
@@ -25,12 +42,13 @@
     </head>
     <body>
      <div class="main">
-        <h2>Islamabad</h2>
-        <p>Islamabad is capital of Pakistan</p>
+        <h2 class="h"><center>Islamabad</center></h2>
+        <p class="p">Islamabad is capital of Pakistan</p>
      </div>  
      <div class="city">
-        <h2>London</h2>
-        <p>London is capital of England</p>
-     </div>
+        <h2 class="h"><center>London</center></h2>
+        <p class="p">London is capital of <b >England</b></p>
+     </div><br>
+     <center><button class="css"onclick="myFunction()">Hide element</button></center>
     </body>
 </html>
