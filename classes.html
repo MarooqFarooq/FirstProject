@@ -35,8 +35,13 @@
                 background-color:darkgreen;
                 border: 2px dotted purple;
                 border-radius: 20px;
+                width:7%;
+                height: 5%;
+                
 
             }
+           
+
         </style>
 
     </head>
@@ -49,6 +54,16 @@
         <h2 class="h"><center>London</center></h2>
         <p class="p">London is capital of <b >England</b></p>
      </div><br>
-     <center><button class="css"onclick="myFunction()">Hide element</button></center>
+    <button class= "css"onclick="myFunction()">Hide element</button>
+    <script>
+        function myFunction(){
+                    var x=document.getElementByClass("citt");
+                    for (var i=0;i<x;i++){
+                        x[i].style.display="none";
+                        
+                    }
+                }
+    </script>
+     
     </body>
 </html>
