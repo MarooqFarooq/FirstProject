@@ -3,16 +3,41 @@
         <title>HideaAndShow</title>
         <style>
             #mydiv{
+                width: 50%;
+                height: 50%;
                 background-color: brown;
+                margin-top: 20px;
             }
-
+#mybtn{
+    background-color: aqua;
+    border-radius: 30px;
+}
         </style>
     </head>
     <body>
-     <input type="button">
-     <div id="mydiv">
+    <center><input type="button" value="ClickMe" id="mybtn"></center>
+    <center><div id="mydiv">
+        <h2>Islamabad</h2>
+       <center> <p>Islamabad is capital of Pakistan</p></center>
 
-     </div>
+    </div></center>
+    <script>
+        document.getElementById("mybtn").addEventListener("click",function() 
+        {
+            var mybox=document.getElementById("mydiv");
+            if(mybox.style.display=="none")
+            {
+                mybox.style.display="block";
+            }
+            else
+            {
+                mybox.style.display="none";
+            }
+        });
+        
+    </script>
+
+     
 
     </body>
 </html>
