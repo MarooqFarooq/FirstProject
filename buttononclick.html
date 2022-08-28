@@ -1,17 +1,59 @@
 <html>
     <head>
         <title>onclick</title>
+        <style>
+            #mydiv{
+                background-color: blueviolet;
+                border: 2px solid black;
+                width: 50%;
+              padding: 20px;
+              margin: 20px;
+            }
+            #mydiv2{
+                background-color:brown;
+                border: 2px solid black;
+                width: 50%;
+              padding: 20px;
+              margin: 20px;
+
+            }
+            #btn1{
+               background-color: aquamarine;
+               border-radius: 20px;
+            }
+            #btn2{
+                background-color: aquamarine;
+               border-radius: 20px;
+
+            }
+        </style>
     </head>
     <body>
-        <div class="city">
+        <input type="button" value="onclick" id="btn1">
+        <div id="mydiv">
             <h2>Islamabad</h2>
             <p>Islamabad is capital of Palistan</p>
         </div>
-        <div class="city2">
+        <input type="button" value="onclick" id="btn2">
+        <div id="mydiv2">
             <h2>london</h2>
             <p>london is capital of england</p>
 
 
         </div>
+        <script>
+            document.getElementById("btn1").addEventListener("click",function() 
+        {
+            var mybox=document.getElementById("city");
+            if(mybox.style.display=="none")
+            {
+                mybox.style.display="block";
+            }
+            else
+            {
+                mybox.style.display="none";
+            }
+        });
+        </script>
     </body>
 </html>
