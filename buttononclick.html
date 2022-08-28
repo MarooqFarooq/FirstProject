@@ -2,14 +2,14 @@
     <head>
         <title>onclick</title>
         <style>
-            #mydiv{
+            #city{
                 background-color: blueviolet;
                 border: 2px solid black;
                 width: 50%;
               padding: 20px;
               margin: 20px;
             }
-            #mydiv2{
+            #city2{
                 background-color:brown;
                 border: 2px solid black;
                 width: 50%;
@@ -28,19 +28,19 @@
             }
         </style>
     </head>
-    <body>
-        <input type="button" value="onclick" id="btn1">
-        <div id="mydiv">
-            <h2>Islamabad</h2>
+    <body><center>
+       <input type="button" value="OnClick" id="btn1">
+        <div id="city">
+          <h2>Islamabad</h2>
             <p>Islamabad is capital of Palistan</p>
         </div>
-        <input type="button" value="onclick" id="btn2">
-        <div id="mydiv2">
+        <input type="button" value="OnClick" id="btn2">
+        <div id="city2">
             <h2>london</h2>
             <p>london is capital of england</p>
 
 
-        </div>
+        </div></center>
         <script>
             document.getElementById("btn1").addEventListener("click",function() 
         {
@@ -52,6 +52,18 @@
             else
             {
                 mybox.style.display="none";
+            }
+        });
+        document.getElementById("btn2").addEventListener("click",function()
+        {
+            var mybox2=document.getElementById("city2");
+            if(mybox2.style.display=="none")
+            {
+                mybox2.style.display="block" ; 
+            }
+            else{
+                mybox2.style.display="none";
+                
             }
         });
         </script>
