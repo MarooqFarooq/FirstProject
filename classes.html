@@ -2,16 +2,18 @@
     <head>
         <style>
             .main{
-                background-color:darkolivegreen;
+                background-color:aquamarine;
             color: antiquewhite;
             border: 2px  solid black;
             padding: 20px;
+            margin: 10px;
+        
           
             width: 50%;
 
             }
             .city{
-            background-color:darkolivegreen;
+            background-color:aqua;
             color: antiquewhite;
             border: 2px  solid black;
             padding: 20px;
@@ -28,7 +30,7 @@
             .h{
                 background-color:darkgreen;
                 border: 2px dotted purple;
-                margin: 20px;
+             
                 
             }
             button{
@@ -50,16 +52,27 @@
         <h2 class="h"><center>Islamabad</center></h2>
         <p class="p">Islamabad is capital of Pakistan</p>
      </div>  
-     <div class="city">
+    
+    <div class="city">
         <h2 class="h"><center>London</center></h2>
         <p class="p">London is capital of <b >England</b></p>
      </div><br>
-    <button onclick="myFunction()">Hide element</button>
+     <button onclick="hideFunction()">Hide</button>
+    <button onclick="showFunction()">Show</button>
     <script>
-        function myFunction(){
-                    var x=document.getElementByClass("city");
-                    for (var i=0;i<x;i++){
+        function hideFunction(){
+                    var x=document.getElementsByClassName("city");
+                    for (var i=0;i<x.length;i++){
                         x[i].style.display="none";
+                        
+                    }
+                }
+    </script>
+     <script>
+        function showFunction(){
+                    var x=document.getElementsByClassName("city");
+                    for (var i=0;i<x.length;i++){
+                        x[i].style.display="block";
                         
                     }
                 }
