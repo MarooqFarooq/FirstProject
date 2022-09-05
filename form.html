@@ -5,27 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color:gray;
+        
+        }
+        form{
+            background-color: cadetblue;
+            width: 45%;
+            height: 45vw;
+            text-align: center;
+            border-radius: 40px;
+            justify-content: center;
+        }
+        .form1{
+            text-align: center;
+        }
+        .btn{
+            border-radius: 20px;
+         
+        }
+        .btn:hover{
+            background-color:blue;
+        }
+        .div1{
+            justify-content: center;
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-    <form style="background-color:aqua">
-        <h1>Personal Information</h1>
-        <label for="name"> Name</label>
+    <div class="div1">
+    <form   action="backend.php" class="form1">
+        <div>
+        <h1 style =color:brown>Registration Form</h1></div>
+        <label for="name"> Name:</label>
         <input type="text" name ="name" id="name"/> <br>
         <br>
-        <label for="Password">Password</label>
+        <label for="Password">Password:</label>
         <input type="text" name ="Password" id="Password"/> <br>
         <br>
-        <label for="Email">Email</label>
+        <label for="Email">Email:</label>
         <input type="text" name ="Email" id="Email"/> <br>
-        Gender
-        <input type="radio" name="radiogroup1" value="radio" id="radiogroup1"/>
-        <label for="radiogroup1">Male</label>
-        <input type="radio" name="radiogroup2" value="radio" id="radiogroup2"/>
+        Gender:
+        <label for="male">Male</label>
+        <input type="radio" name="radiogroup1" value="radio" id="male"/>
+        <label for="female">Female</label>
+    
+        Female<input type="radio" name="radiogroup1" value="radio" id="female"/>
         
-        <label for="radiogroup2">Female</label>
         <br>
         <br>
-        degree
+       <label for="degresss">degree</label>
         <select name="degree" id="degresss">
             <option>Select grup</option>
             <option>computer sciences/option>
@@ -34,7 +65,7 @@
         </select>
         <br>
         <br>
-        field
+        <label for="field">Field</label>
         <select name="field" id="field">
             <option>Select grup</option>
             <option>computer sciences/option>
@@ -43,26 +74,39 @@
         </select>
         <br>
         <br>
-        checkbox 
-        <label for="checkboxes"></label>
-        <input type="checkbox"  name="checkbox1" name="checkbox1" id="checkboxes"/>
-        hobies
-        <input type="checkbox" name="checkbox1" value="checkbox" id="Checkbox1"/>
-        <input />
-        <h3>Address</h3>
-        <textarea name ="text area" cols="35" id="textarea"></textarea>
-        <br>
+        <label for="Date">Date</label>
+       <input type="date" name="date" id="Date">
+       <br>
+       <br>
+      Hobies:
+      <label for="book">  Reading Book</label>
+     <input type="checkbox"  name="checkbox1" name="checkbox1" id="book"/>
+       <label for="Playing">  Playing chees</label>
+    
+      <input type="checkbox" name="checkbox1" value="checkbox" id="Playing"/>
+        
+       
         <br>
         
  
         <br>
-        Attch Resume
+       <label for="filefield1">file</label>
 
-        <input type="file" name="filefield" id="filefield"/>
+        <input type="file" name="filefield" id="filefield1"/>
         <br>
         <br>
-        <input type="submit" value="Submit Form"/>
+        <h4>Write about yourSelf</h4>
+        <label for="address1">Address</label>
+       <textarea name="" id="address1" cols="30" rows="10"> Write about yourself</textarea> <br>
+        <br>
+        <label for="submit1"></label>
+        <input  class="btn" type="submit"  id="submit1" value="Submit Form"/>
+        <label for="reset1">Reset</label>
+        <input class="btn" type="reset"  id = "reset1" value="Reset Form"/>
+       
     </form>
+    </div>
+
     
 </body>
 </html>
